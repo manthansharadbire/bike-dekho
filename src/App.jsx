@@ -5,6 +5,7 @@ import supermeteor650 from './assets/supermeteor650.webp';
 import shotgun650 from './assets/shotgun650.webp';
 import classic650 from './assets/classic650.webp';
 import BikeCard from './components/BikeCards';
+import { Info } from 'lucide-react';
 
 const BIKES = [
   {
@@ -19,7 +20,7 @@ const BIKES = [
   },
   {
     thumbnail: supermeteor650,
-    modelname: "Super Meteor",
+    modelname: "Super Meteor ",
     year: "2023",
     engine: "650cc",
     mileage: "21kmpl",
@@ -85,7 +86,7 @@ function App() {
   return (
     <div>
       <div className='text-center bg-black'>
-        <h1 className='text-2xl pt-3 pb-3 border-b shadow-md text-white'>BIKE DEKHO 650</h1>
+        <h1 className='text-xl md:text-2xl pt-1 md:pt-3 pb-1 md:pb-3 border-b shadow-md text-white'>BIKE DEKHO 650</h1>
       </div>
       <div className='flex justify-evenly m-5 cursor-pointer'>
         {BIKES.map((obj, index) => {
@@ -103,22 +104,22 @@ function App() {
 
       </div>
 
-      <div className='flex justify-center'>
+      <div className='md:flex md:justify-center'>
         {bikeDetails1 && (
-          <div className='bg-blue-300 text-center mr-5 mb-3'>
-            <img src={bikeDetails1.thumbnail} alt={bikeDetails1.modelname} className='h-[300px]' />
-            <h1 className='bg-red-600 text-white text-2xl p-2'>{bikeDetails1.modelname} </h1>
+          <div className='bg-blue-300 text-center md:mr-5 md:mb-3 w-full'>
+            <img src={bikeDetails1.thumbnail} alt={bikeDetails1.modelname} className='h-[300px]  w-full' />
+            <h1 className='bg-red-600 text-white text-2xl p-2 '>{bikeDetails1.modelname} </h1>
             <h2 className='bg-black text-white  pt-1'>Engine : {bikeDetails1.engine}</h2>
             <p className='bg-black text-white'>Mileage : {bikeDetails1.mileage}</p>
             <p className='bg-black text-white'>Weight : {bikeDetails1.weight}</p>
             <p className='bg-black text-white'>On-Road price : {bikeDetails1.price}</p>
-            <p className='bg-black text-white pb-3'>{bikeDetails1.shortInfo}</p>
+           <p className='bg-black text-white pb-3'>{bikeDetails1.shortInfo}</p>
           </div>
         )}
 
         {bikeDetails2 && (
-          <div  className='bg-blue-300 text-center mr-5 mb-3 '>
-            <img src={bikeDetails2.thumbnail} alt={bikeDetails2.modelname} className='h-[300px]'/>
+          <div  className='bg-blue-300 text-center mr-5 mb-3 w-full'>
+            <img src={bikeDetails2.thumbnail} alt={bikeDetails2.modelname} className='h-[300px] w-full'/>
             <h1 className='bg-red-600 text-white text-2xl p-2'>{bikeDetails2.modelname}</h1>
             <h2 className='bg-black text-white pt-1'>Engine : {bikeDetails2.engine}</h2>
             <p className='bg-black text-white'>Mileage : {bikeDetails2.mileage}</p>
@@ -133,7 +134,7 @@ function App() {
         {(bikeDetails1 && bikeDetails2) && (
           <button
             onClick={resetBikes}
-            className="px-4 py-2 bg-red-500 text-white hover:bg-red-600 "
+            className=" px-3 md:px-4 py-1 md:py-2 bg-red-500 text-white hover:bg-red-600 text-xs md:text-xl"
           >
             Reset Comparison
           </button>
