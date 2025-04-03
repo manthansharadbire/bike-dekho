@@ -1,11 +1,11 @@
-# React + Vite
+# Bike-Dekho 650
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple 650cc engines Royal Enfield bikes comparison ReactJs application.
+This app compares between the 2 bike cards.
 
-Currently, two official plugins are available:
+Here's the Website URL:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://bikedekho650.netlify.app
 
 ## Expanding the ESLint configuration
 
