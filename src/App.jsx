@@ -85,7 +85,7 @@ function App() {
   return (
     <div>
       <div className='text-center bg-black'>
-        <h1 className='text-2xl pt-3 pb-3 border-b shadow-md text-white'>Bike Dekho</h1>
+        <h1 className='text-2xl pt-3 pb-3 border-b shadow-md text-white'>BIKE DEKHO 650</h1>
       </div>
       <div className='flex justify-evenly m-5 cursor-pointer'>
         {BIKES.map((obj, index) => {
