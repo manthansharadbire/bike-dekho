@@ -104,10 +104,10 @@ function App() {
 
       </div>
 
-      <div className='md:flex md:justify-center'>
+      <div className='md:flex justify-center'>
         {bikeDetails1 && (
-          <div className='bg-blue-300 text-center md:mr-5 md:mb-3 w-full'>
-            <img src={bikeDetails1.thumbnail} alt={bikeDetails1.modelname} className='h-[300px]  w-full' />
+          <div className=' text-center mr-5 md:mb-3 ml-5 '>
+            <img src={bikeDetails1.thumbnail} alt={bikeDetails1.modelname} className='h-[300px] m-auto' />
             <h1 className='bg-red-600 text-white text-2xl p-2 '>{bikeDetails1.modelname} </h1>
             <h2 className='bg-black text-white  pt-1'>Engine : {bikeDetails1.engine}</h2>
             <p className='bg-black text-white'>Mileage : {bikeDetails1.mileage}</p>
@@ -118,8 +118,8 @@ function App() {
         )}
 
         {bikeDetails2 && (
-          <div  className='bg-blue-300 text-center mr-5 mb-3 w-full'>
-            <img src={bikeDetails2.thumbnail} alt={bikeDetails2.modelname} className='h-[300px] w-full'/>
+          <div  className=' text-center mr-5 md:mb-3 ml-5  '>
+            <img src={bikeDetails2.thumbnail} alt={bikeDetails2.modelname} className='h-[300px] m-auto'/>
             <h1 className='bg-red-600 text-white text-2xl p-2'>{bikeDetails2.modelname}</h1>
             <h2 className='bg-black text-white pt-1'>Engine : {bikeDetails2.engine}</h2>
             <p className='bg-black text-white'>Mileage : {bikeDetails2.mileage}</p>
@@ -134,7 +134,7 @@ function App() {
         {(bikeDetails1 && bikeDetails2) && (
           <button
             onClick={resetBikes}
-            className=" px-3 md:px-4 py-1 md:py-2 bg-red-500 text-white hover:bg-red-600 text-xs md:text-xl"
+            className=" mt-1 px-3 md:px-4 py-1 md:py-2 bg-red-500 text-white hover:bg-red-600 text-xs md:text-xl"
           >
             Reset Comparison
           </button>
